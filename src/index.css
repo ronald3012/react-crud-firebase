@@ -12,6 +12,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
+}
+h1{
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
 }
 
 .App .login{
@@ -22,8 +28,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 200px;
+  width: 300px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .login input{
+  border: slategray solid 1px;
 }
 
 .App .login div{
@@ -40,4 +52,38 @@ body {
   padding: 5px;
   border-radius: 5px;
   color: white;
+}
+
+.task{
+  background-color: rebeccapurple;
+
+  min-height: 250px;
+  box-shadow: 0 0 4px gray;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  color: #fff;
+}
+
+button{
+  background-color: red;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+input{
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.btn-save{
+  background-color: seagreen;
 }
