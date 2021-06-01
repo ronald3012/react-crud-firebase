@@ -7,7 +7,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App .login{
+  height: 250px;
+  box-shadow: 0 0 4px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.App .login div{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+}
+
+.error{
+  margin-top: 10px;
+  background-color: tomato;
+  font-size: .9rem;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
 }
